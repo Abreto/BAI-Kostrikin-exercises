@@ -1,10 +1,33 @@
 \documentclass{ctexbook}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref, bookmark}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+\ctexset{
+    chapter = {
+        number = \arabic{chapter},
+    },
+    section = {
+        name = {\S,},
+        number = \arabic{section},
+    },
+}
 
 \title{《代数学引论（第一卷）》（柯斯特利金）习题}
 \author{Abreto Fu\footnote{Email:~abreto~[AT]~std.uestc.edu.cn}}
 
 \begin{document}
 
+\pdfbookmark[chapter]{标题页}{title}
 \maketitle
+
+\cleardoublepage
+\pdfbookmark[chapter]{\contentsname}{toc}
+\tableofcontents
+
+\input{chap/ch01.tex}
 
 \end{document}
