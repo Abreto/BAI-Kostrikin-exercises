@@ -1,3 +1,6 @@
+*.pdf
+!BAI-exercises.pdf
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
