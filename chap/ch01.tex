@@ -11,4 +11,26 @@
 
 \section{低阶行列式}
 
+\problem{2}
+证明在三阶行列式展开式中的六项不可能同时为正.
+\begin{proof}
 
+展开式中的六项的乘积为
+\begin{equation}
+\begin{aligned}
+    \Gamma &= a_{11}a_{22}a_{33}\cdot{}a_{12}a_{23}a_{31}\cdot{a_{13}}a_{21}a_{32}
+    \cdot(-a_{11}a_{23}a_{32})\cdot(-a_{12}a_{21}a_{33})\cdot(-a_{13}a_{22}a_{31}) \\
+    &= -(a_{11}a_{12}a_{13}a_{21}a_{22}a_{23}a_{31}a_{32}a_{33})^2 \le 0
+\end{aligned}
+\end{equation}
+
+若这六项同时为正，则应有
+\begin{equation}
+    \Gamma > 0
+\end{equation}
+
+与上式矛盾.
+
+故在三阶行列式展开式中的六项不可能同时为正.
+
+\end{proof}
