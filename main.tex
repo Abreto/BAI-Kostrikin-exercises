@@ -27,7 +27,12 @@
 % \@addtoreset{equation}{section}
 % \makeatother
 
+\newcommand{\abdet}[1]{\begin{vmatrix}#1\end{vmatrix}}
+
+\newtheorem{lemma}{引理}[section]
+
 \newcommand{\abref}[1]{式 \eqref{#1}}
+\newcommand{\lemmaref}[1]{引理 \ref{#1}}
 
 \title{《代数学引论（第一卷）》（柯斯特利金）习题}
 \author{Abreto Fu\footnote{Email:~abreto [AT] std.uestc.edu.cn}}

@@ -63,4 +63,96 @@
 \]
 \end{quotation}
 
+\begin{lemma}\label{lem:ch01:sec04:lem1}
+    \[
+        \begin{vmatrix}
+            a & b \\ c & d
+        \end{vmatrix}
+        =
+        \begin{vmatrix}
+            a & c \\ b & d
+        \end{vmatrix}
+    \]
+\end{lemma}
+\lemmaref{lem:ch01:sec04:lem1} 可由定义直接导出.
 
+\begin{lemma}\label{lem:ch01:sec04:2}
+\[
+    -a\begin{vmatrix} c & d \\ e & f \end{vmatrix}
+    +b\begin{vmatrix} c & d \\ g & h \end{vmatrix}
+    =
+    -c\abdet{a & b \\ h & f}
+    +d\abdet{a & b \\ g & e}
+\]
+\end{lemma}
+\begin{proof}
+\[
+\begin{aligned}
+    -a\abdet{c & d \\ e & f} + b\abdet{c & d \\ g & h}
+    &= -a(cf - de) + b(ch - dg) \\
+    &= -c(af - bh) + d(ae - bg) \\
+    &= -c\abdet{a & b \\ h & f}+d\abdet{a & b \\ g & e}
+\end{aligned}
+\]
+\end{proof}
+
+\paragraph{第一个式子}
+
+\begin{equation}
+\begin{aligned}
+    D_1 &= \abdet{a_{11} & a_{12} & a_{13} \\ a_{21} & a_{22} & a_{23} \\ a_{31} & a_{32} & a_{33}} \\
+    &= a_{11}\abdet{a_{22} & a_{23} \\ a_{32} & a_{33}}
+      -a_{21}\abdet{a_{12} & a_{13} \\ a_{32} & a_{33}}
+      +a_{31}\abdet{a_{12} & a_{13} \\ a_{22} & a_{23}}
+\end{aligned} 
+\end{equation}
+
+由\lemmaref{lem:ch01:sec04:lem1} 可知
+\begin{equation}
+    a_{11}\abdet{a_{22} & a_{23} \\ a_{32} & a_{33}}
+    =
+    a_{11}\abdet{a_{22} & a_{32} \\ a_{23} & a_{33}}
+\end{equation}
+
+由\lemmaref{lem:ch01:sec04:2} 得
+\begin{equation}
+    -a_{21}\abdet{a_{12} & a_{13} \\ a_{32} & a_{33}}
+    +a_{31}\abdet{a_{12} & a_{13} \\ a_{22} & a_{23}}
+    =
+    -a_{12}\abdet{a_{21} & a_{31} \\ a_{23} & a_{33}}
+    +a_{13}\abdet{a_{21} & a_{31} \\ a_{22} & a_{32}}
+\end{equation}
+
+于是
+\begin{equation}
+\begin{aligned}
+    D_1 &= a_{11}\abdet{a_{22} & a_{32} \\ a_{23} & a_{33}}
+    -a_{12}\abdet{a_{21} & a_{31} \\ a_{23} & a_{33}}
+    +a_{13}\abdet{a_{21} & a_{31} \\ a_{22} & a_{32}} \\
+    &= \abdet{
+        a_{11} & a_{21} & a_{31} \\
+        a_{12} & a_{22} & a_{32} \\
+        a_{13} & a_{23} & a_{33}
+    }
+\end{aligned}
+\end{equation}
+第一个式子验证完毕.
+
+\paragraph{第二个式子} % (fold)
+
+\begin{equation}
+\begin{aligned}
+\abdet{
+    0 & a & b \\
+    -a & 0 & c \\
+    -b & -c & 0
+} &= 0\abdet{0 & c \\ -c & 0}
+    -(-a)\abdet{a & b \\ -c & 0}
+    +(-b)\abdet{a & b \\ 0 & c} \\
+  &= abc - bac = 0
+\end{aligned}
+\end{equation}
+
+验证完毕.
+
+% paragraph 第二个式子 (end)
