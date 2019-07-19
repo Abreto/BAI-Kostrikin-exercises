@@ -21,10 +21,16 @@
     },
 }
 
-\newcommand{\problem}[1]{\subsection{#1}}
+\newcommand{\problem}[1]{\subsection{第 {#1} 题}}
+% 使公式编号与小节关联
+% \makeatletter
+% \@addtoreset{equation}{section}
+% \makeatother
+
+\newcommand{\abref}[1]{式 \eqref{#1}}
 
 \title{《代数学引论（第一卷）》（柯斯特利金）习题}
-\author{Abreto Fu\footnote{Email:~abreto~[AT]~std.uestc.edu.cn}}
+\author{Abreto Fu\footnote{Email:~abreto [AT] std.uestc.edu.cn}}
 
 \begin{document}
 
