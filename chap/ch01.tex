@@ -156,3 +156,35 @@
 验证完毕.
 
 % paragraph 第二个式子 (end)
+
+\section{集合与映射} % (begin)
+
+\problem{1}
+\begin{quotation}
+    设 $\Omega = \{+,-,++,+-,-+,--,+++,\cdots\}$ 是加号和减号的有限序列的集合，
+    而 $f: \Omega \to \Omega$ 是一个变换，将元素
+    $\omega = \omega_1\omega_2\cdots\omega_n\in\Omega$
+    对应到
+    $\omega' = \omega_1\dot{\omega}_1\omega_2\dot{\omega}_2\cdots\omega_n\dot{\omega}_n$，
+    其中若 $\omega_k=+$，则 $\dot{\omega}_k=-$，
+    若 $\omega_k=-$，则 $\dot{\omega}_k=+$.
+    证明在 $f(f\omega)$ 的长度 $>4$ 的任意区间内包含 $++$ 或 $--$.
+\end{quotation}
+
+\begin{proof}
+    设
+    \begin{equation}
+        f(f\omega) = \omega_0\omega_1\omega_2\cdots\omega_n
+    \end{equation}
+
+    由定义易知，
+    \begin{equation}
+        \forall k \ge 0, \omega_{4k+1} = \omega_{4k+2}
+    \end{equation}
+
+    对于任意长度 $>4$ 的区间，一定包含连续的两项形如 $\omega_{4k+1}\omega_{4k+2}$.
+
+    即一定包含相等的连续两项.
+\end{proof}
+
+% section 集合与映射 (end)
