@@ -195,4 +195,32 @@
     即一定包含相等的连续两项.
 \end{proof}
 
+\problem{2}
+\begin{quotation}
+    由法则 $n \to n^2$ 给出的映射 $f: \setN \to \setN$ 有右逆吗？
+    给出 $f$ 的两个左逆.
+\end{quotation}
+
+假设 $f$ 有右逆 $g$，即
+\begin{equation}
+    fg = e_\setN
+\end{equation}
+由\lemmaref{lem:ch01:sec05:1} 得，$f$ 是满的，
+与题设矛盾.
+故 $f$ 不存在右逆.
+
+给出两个左逆如下
+\begin{equation}
+    h_1(n) = \begin{cases}
+        \sqrt{n}, & n \text{ 是完全平方数}; \\
+        1, & \text{otherwise}.
+    \end{cases}
+\end{equation}
+\begin{equation}
+    h_2(n) = \begin{cases}
+        \sqrt{n}, & n \text{ 是完全平方数}; \\
+        2, & \text{otherwise}.
+    \end{cases}
+\end{equation}
+
 % section 集合与映射 (end)
