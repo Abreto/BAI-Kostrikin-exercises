@@ -463,6 +463,21 @@ $\mathcal{P}(S)$ 的基数即为 $S$ 的不同子集的个数，
     $S \Delta T = (S \backslash T)\cup(T \backslash S).$
     证明 $S \Delta T = (S \cup T)\backslash(S \cap T).$
 \end{quotation}
+\begin{lemma}\label{lem:ch01:sec05:3}
+    设有集合 $A, B, C$，
+    若 $A \cap C = \varnothing$，则
+    \[
+        (A \backslash B) \cup C = (A \cup C)\backslash(A \cap B).
+    \]
+\end{lemma}
+\begin{proof}
+    \begin{enumerate}
+        \item $S \Delta T \subset (S \cup T)\backslash(S \cap T):$
+
+        对 $\forall x \in S \Delta T$，
+        要么 $x \in S \backslash T$，要么 $x \in T \backslash S$.
+    \end{enumerate}
+\end{proof}
 % problem 7 (end)
 
 % section 集合与映射 (end)
