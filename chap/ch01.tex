@@ -295,4 +295,24 @@
 \end{proof}
 % paragraph 第二个式子 (end)
 
+\paragraph{一个反例} % (fold)
+\label{par:一个反例}
+考虑映射 $f: n \mapsto n^2$，
+以及 $\setZ$ 的子集 $S = \{-1, 0\}, T = \{0, 1\}$.
+
+那么
+\begin{equation}
+    S \cap T = \{ 0 \}, \quad f(S \cap T) = \{ 0 \},
+\end{equation}
+同时
+\begin{equation}
+    f(S) = \{ 1, 0 \}, f(T) = \{ 0, 1 \},
+    \quad f(S) \cap f(T) = \{ 0, 1 \}.
+\end{equation}
+
+在这种情况下，
+$f(S) \cap f(T) \nsubseteq f(S \cap T)$.
+所以包含关系不能换成相等关系.
+% paragraph 一个反例 (end)
+
 % section 集合与映射 (end)
