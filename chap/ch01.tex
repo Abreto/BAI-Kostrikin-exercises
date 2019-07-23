@@ -315,4 +315,28 @@ $f(S) \cap f(T) \nsubseteq f(S \cap T)$.
 所以包含关系不能换成相等关系.
 % paragraph 一个反例 (end)
 
+\problem{4} % (begin)
+\begin{quotation}
+    集合 $S$ 的全体子集的集合记做
+    \begin{equation*}
+        \mathcal{P}(S) = \{ T \vert T \subset S \}
+    \end{equation*}
+    假如若 $S=\{s_1,s_2,\cdots,s_n\}$ 是含有 $n$ 个元素的有限集，
+    则 $\mathcal{P}(S)$ 由空集 $\varnothing,$
+    $n$ 个单元集 $\{s_1\}, \{s_2\}, \cdots, \{s_n\},$
+    $n(n-1)/2$ 个二元集 $\{s_i, s_j\}, 1 \le i < j \le n,$
+    等等，直到全集 $T = S$ 组成.
+    集合 $\mathcal{P}(S)$ 的基数是多少？
+\end{quotation}
+
+$\mathcal{P}(S)$ 的基数即为 $S$ 的不同子集的个数，
+也是从 $S$ 中选取若干个元素出来的方案数.
+
+每次选择对每个元素来说有选与不选两种可能，
+于是总的方案数为 $2^n$，即
+\begin{equation}
+    \vert \mathcal{P}(S) \vert = 2^n.
+\end{equation}
+% problem 4 (end)
+
 % section 集合与映射 (end)
