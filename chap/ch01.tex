@@ -427,11 +427,11 @@ $\mathcal{P}(S)$ 的基数即为 $S$ 的不同子集的个数，
 
     定义
     \begin{equation}
-        \pi^{(k)}(x_1, \dots, x_{n-1}, x_n) = \begin{cases}
-            \frac{1}{2}(x_1 + x_2)(x_1 + x_2 + 1) + x_2 & k = 2; \\
+        \pi^{(n)}(k_1, \dots, k_{n-1}, k_n) = \begin{cases}
+            \frac{1}{2}(k_1 + k_2)(k_1 + k_2 + 1) + k_2 & n = 2; \\
             \pi^{(2)}(
-                \pi^{(k - 1)}(x_1, \dots, x_{n-1}),
-                x_n
+                \pi^{(n - 1)}(k_1, \dots, k_{n-1}),
+                k_n
             ) & \text{otherwise}.
         \end{cases}
     \end{equation}
