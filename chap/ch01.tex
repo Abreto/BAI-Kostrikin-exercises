@@ -235,4 +235,46 @@
     试举一例，说明后一个式子中的包含关系一般来说不能换成相等关系.
 \end{quotation}
 
+\paragraph{第一个式子} % (fold)
+\label{par:第一个式子}
+\begin{proof}
+    \begin{equation}
+        \forall y \in f(S \cup T),
+        \exists x \in S \cup T,
+        f(x) = y.
+    \end{equation}
+    \begin{enumerate}
+        \item $x \in S$，则 $y = f(x) \in S;$
+        \item $x \in T$，则 $y = f(x) \in T.$
+    \end{enumerate}
+    于是
+    \begin{equation}
+        f(S \cup T) \subset f(S) \cup f(T).
+    \end{equation}
+
+    \begin{equation}
+        \forall y \in f(S) \cup f(T),
+        \text{ 要么}\: y \in f(S),
+        \text{ 要么}\: y \in f(T).
+    \end{equation}
+    \begin{enumerate}
+        \item $y \in f(S)$，则 $\exists x \in S \subset S \cup T, f(x) = y$，
+            于是 $y \in f(S \cup T);$
+        \item $y \in f(T)$，则 $\exists x \in T \subset S \cup T, f(x) = y$，
+            于是 $y \in f(S \cup T).$
+    \end{enumerate}
+    所以
+    \begin{equation}
+        f(S) \cup f(T) \subset f(S \cup T).
+    \end{equation}
+
+    综上所述
+    \begin{equation}
+        f(S \cup T) = f(S) \cup f(T)
+    \end{equation}
+\end{proof}
+% paragraph 第一个式子 (end)
+
+
+
 % section 集合与映射 (end)
