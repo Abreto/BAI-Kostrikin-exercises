@@ -339,4 +339,66 @@ $\mathcal{P}(S)$ 的基数即为 $S$ 的不同子集的个数，
 \end{equation}
 % problem 4 (end)
 
+\problem{5} % (begin)
+\begin{quotation}
+    设 $f: X \to Y$ 是一个映射，
+    且设对某个元素 $a \in X, b = f(a)$.
+    原像
+    \[
+        f^{-1}(b) = f^{-1}(f(a)) = \{ x \vert f(x) = f(a) \}
+    \]
+    叫作元素 $b \in \mathrm{Im}f$ 上的纤维.
+    证明集合 $X$ 是互不相交的纤维的并（也就是说，
+    给出了 $X$ 的一个划分）.
+\end{quotation}
+\begin{proof}
+    设任意 $b_1, b_2 \in \mathrm{Im}f$ 且 $b_1 \ne b_2$，
+    则 $f^{-1}(b_1) \cap f^{-1}(b_2) = \varnothing$，
+    否则将有 $b_1 = b_2$，与前述矛盾.
+
+    下面证明
+    \begin{equation*}
+        X = \bigcup_{b \in \mathrm{Im}f}{f^{-1}(b)}
+    \end{equation*}
+
+    \begin{enumerate}
+        \item $X \subset \bigcup_{b \in \mathrm{Im}f}{f^{-1}(b)}$:
+
+            设任意 $x \in X$，取 $b = f(x) \in \mathrm{Im}f$，
+            显然有
+            \begin{equation}
+                x \in f^{-1}(b) \subset \bigcup_{b \in \mathrm{Im}f}{f^{-1}(b)},
+            \end{equation}
+            于是 $X \subset \bigcup_{b \in \mathrm{Im}f}{f^{-1}(b)}$.
+
+        \item $\bigcup_{b \in \mathrm{Im}f}{f^{-1}(b)} \subset X$:
+
+            记
+            \begin{equation}
+                S = \bigcup_{b \in \mathrm{Im}f}{f^{-1}(b)}.
+            \end{equation}
+
+            设任意 $s \in S$，那么
+            \begin{equation}
+                \exists b \in \mathrm{Im}f, s \in f^{-1}(b),
+            \end{equation}
+            也就是
+            \begin{equation}
+                f(s) = b,
+            \end{equation}
+            所以
+            \begin{equation}
+                s \in X.
+            \end{equation}
+            故
+            \begin{equation}
+                S \subset X.
+            \end{equation}
+    \end{enumerate}
+    
+    综上所述，$X = \bigcup_{b \in \mathrm{Im}f}{f^{-1}(b)}$，
+    且 $f^{-1}(b)$ 间互不相交.
+\end{proof}
+% problem 5 (end)
+
 % section 集合与映射 (end)
