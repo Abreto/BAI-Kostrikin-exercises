@@ -395,10 +395,49 @@ $\mathcal{P}(S)$ 的基数即为 $S$ 的不同子集的个数，
                 S \subset X.
             \end{equation}
     \end{enumerate}
-    
+
     综上所述，$X = \bigcup_{b \in \mathrm{Im}f}{f^{-1}(b)}$，
     且 $f^{-1}(b)$ 间互不相交.
 \end{proof}
 % problem 5 (end)
+
+\problem{6} % (begin)
+\begin{quotation}
+    证明有限个可数集的笛卡尔积也是可数集.
+\end{quotation}
+
+\begin{proof}
+    设集合
+    \[
+        X_1, X_2, X_3, \dots, X_n \quad(n \ge 2)
+    \]
+    都是可数集. 存在 $n$ 个双射
+    \begin{equation}
+        f_i: X_i \to \setN, \qquad 1 \le i \le n.
+    \end{equation}
+
+    下面构造它们的笛卡尔积
+    $X = \prod_{i=1}^n{X_i}$
+    到
+    $\setN$
+    的双射
+    \begin{equation*}
+        f: X \to \setN.
+    \end{equation*}
+
+    定义
+    \begin{equation}
+        \pi^{(k)}(x_1, \dots, x_{n-1}, x_n) = \begin{cases}
+            \frac{1}{2}(x_1 + x_2)(x_1 + x_2 + 1) + x_2 & k = 2; \\
+            \pi^{(2)}(
+                \pi^{(k - 1)}(x_1, \dots, x_{n-1}),
+                x_n
+            ) & \text{otherwise}.
+        \end{cases}
+    \end{equation}
+    则 $\pi^{(n)}$ 是 $\setN^n \to \setN$ 的双射
+    （参见 \href{https://en.wikipedia.org/wiki/Pairing_function#Cantor_pairing_function}{Cantor pairing function}）.
+\end{proof}
+% problem 6 (end)
 
 % section 集合与映射 (end)
