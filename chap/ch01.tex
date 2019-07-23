@@ -406,6 +406,11 @@ $\mathcal{P}(S)$ 的基数即为 $S$ 的不同子集的个数，
     证明有限个可数集的笛卡尔积也是可数集.
 \end{quotation}
 
+\begin{lemma}\label{lem:ch01:sec05:2}
+    设映射 $f: X \to Y, g: Y \to Z$ 都是双射，
+    则 $gf$ 是 $X \to Z$ 的双射.
+\end{lemma}
+
 \begin{proof}
     设集合
     \[
@@ -437,6 +442,18 @@ $\mathcal{P}(S)$ 的基数即为 $S$ 的不同子集的个数，
     \end{equation}
     则 $\pi^{(n)}$ 是 $\setN^n \to \setN$ 的双射
     （参见 \href{https://en.wikipedia.org/wiki/Pairing_function#Cantor_pairing_function}{Cantor pairing function}）.
+
+    设 $X \to \setN^n$ 的映射
+    \begin{equation}
+        g(x_1, x_2, \dots, x_n) = (f_1(x_1), f_2(x_2), \dots, f_n(x_n))
+    \end{equation}
+    由于每个 $f_i (1 \le i \le n)$ 都是双射，
+    于是 $g$ 也是双射.
+
+    令 $f = \pi^{(n)}g$，
+    由\lemmaref{lem:ch01:sec05:2} 得，
+    $f$ 是 $X \to \setN$ 上的双射.
+    $X$ 是可数集.
 \end{proof}
 % problem 6 (end)
 
