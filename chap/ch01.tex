@@ -275,6 +275,24 @@
 \end{proof}
 % paragraph 第一个式子 (end)
 
+\paragraph{第二个式子} % (fold)
+\label{par:第二个式子}
+\begin{proof}
+    \begin{equation}
+        \forall y \in f(S \cap T),
+        \exists x \in S \cap T,
+        f(x) = y.
+    \end{equation}
 
+    此时 $x \in S$ 且 $x \in T$，
+    所以 $f(x) \in f(S)$ 且 $f(x) \in f(T)$，
+    即 $y = f(x) \in f(S) \cap f(T)$.
+
+    故而
+    \begin{equation}
+        f(S \cap T) \subset f(S) \cap f(T).
+    \end{equation}
+\end{proof}
+% paragraph 第二个式子 (end)
 
 % section 集合与映射 (end)
