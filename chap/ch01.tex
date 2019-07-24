@@ -411,6 +411,7 @@ $\mathcal{P}(S)$ 的基数即为 $S$ 的不同子集的个数，
     则 $gf$ 是 $X \to Z$ 的双射.
 \end{lemma}
 
+下面是原题的证明.
 \begin{proof}
     设集合
     \[
@@ -433,11 +434,11 @@ $\mathcal{P}(S)$ 的基数即为 $S$ 的不同子集的个数，
     定义
     \begin{equation}
         \pi^{(n)}(k_1, \dots, k_{n-1}, k_n) = \begin{cases}
-            \frac{1}{2}(k_1 + k_2)(k_1 + k_2 + 1) + k_2 & n = 2; \\
+            \frac{1}{2}(k_1 + k_2)(k_1 + k_2 + 1) + k_2, & n = 2; \\
             \pi^{(2)}(
                 \pi^{(n - 1)}(k_1, \dots, k_{n-1}),
                 k_n
-            ) & \text{otherwise}.
+            ), & n > 2.
         \end{cases}
     \end{equation}
     则 $\pi^{(n)}$ 是 $\setN^n \to \setN$ 的双射
