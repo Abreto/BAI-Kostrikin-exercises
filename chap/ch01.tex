@@ -21,8 +21,8 @@
 展开式中的六项的乘积为
 \begin{equation}\label{eq:ch01:sec04:prob02}
 \begin{aligned}
-    \Gamma &= a_{11}a_{22}a_{33}\cdot{}a_{12}a_{23}a_{31}\cdot{a_{13}}a_{21}a_{32}
-    \cdot(-a_{11}a_{23}a_{32})\cdot(-a_{12}a_{21}a_{33})\cdot(-a_{13}a_{22}a_{31}) \\
+    \Gamma &= a_{11}a_{22}a_{33}\cdot{}a_{12}a_{23}a_{31}\cdot{a_{13}}a_{21}a_{32} \\
+    & \qquad \cdot(-a_{11}a_{23}a_{32})\cdot(-a_{12}a_{21}a_{33})\cdot(-a_{13}a_{22}a_{31}) \\
     &= -(a_{11}a_{12}a_{13}a_{21}a_{22}a_{23}a_{31}a_{32}a_{33})^2 \le 0
 \end{aligned}
 \end{equation}
@@ -549,6 +549,43 @@ $\mathcal{P}(S)$ 的基数即为 $S$ 的不同子集的个数，
     当且仅当 $x' - x \in \setZ$ 且 $y - y' \in \setZ$.
     证明 $\sim$ 是等价关系，且商集可以几何地表示为环面（例如小面包圈的表面）上的点集.
 \end{quotation}
+
+\begin{proof}
+先来证明 $\sim$ 是等价关系.
+
+\begin{enumerate}
+    \item[reflexive] 设任意 $P(x,y) \in \setR^2$，显然有
+    \begin{equation}
+        x - x = 0 \in \setZ \qquad y - y = 0 \in \setZ
+    \end{equation}
+    所以 $P(x,y) \sim P(x,y)$.
+    
+    \item[symmetric] 设任意 $P(x,y) \sim P(x', y')$，则
+    \begin{equation}
+        x' - x \in \setZ \qquad y' - y \in \setZ
+    \end{equation}
+    那么显然
+    \begin{equation}
+        x - x' = -(x' - x) \in \setZ \qquad
+        y - y' = -(y' - y) \in \setZ
+    \end{equation}
+    所以 $P(x', y') \sim P(x, y)$.
+    
+    \item[transitive] 设任意 $P(x,y) \sim P(x', y'), P(x', y') \sim P(x'', y'')$，则
+    \begin{gather}
+        x' - x \in \setZ \qquad y' - y \in \setZ \\
+        x'' - x' \in \setZ \qquad y'' - y' \in \setZ
+    \end{gather}
+    所以
+    \begin{gather}
+        x'' - x = (x'' - x') + (x' - x) \in \setZ \\
+        y'' - y = (y'' - y') + (y' - y) \in \setZ
+    \end{gather}
+    故而 $P(x,y) \sim P(x'', y'')$.
+\end{enumerate}
+所以 $\sim$ 是等价关系.
+
+\end{proof}
 
 % problem 2 (end)
 
