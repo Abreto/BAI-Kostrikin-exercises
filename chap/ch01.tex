@@ -658,6 +658,39 @@ $\mathcal{P}(S)$ 的基数即为 $S$ 的不同子集的个数，
         \item 整数 $24$ 的全体因子的几何（偏序关系由整除给出）.
     \end{enumerate}
 \end{quotation}
+\begin{enumerate}
+    \item 如图 \ref{fig:ch01:sec06:prob5:1}.
+    \begin{figure}
+        \centering
+        \begin{tikzpicture}
+            \draw [fill] (0,0) circle [radius=0.05]; % \varnothin
+            \node [below] at (0,0) {$\varnothing$};
+            \draw (0,0) -- (-1.5,1);
+            
+            \draw[fill] (-1.5,1) circle [radius=0.05]; % {a}
+            \draw[fill] (-0.5,1) circle [radius=0.05]; % {b}
+            \draw[fill] (0.5,1) circle [radius=0.05]; % {c}
+            \draw[fill] (1.5,1) circle [radius=0.05]; % {d}
+            
+            \draw[thin] (-2.5,2) circle [radius=0.05]; % {}
+            \draw[thin] (-1.5,2) circle [radius=0.05];
+            \draw[thin] (-0.5,2) circle [radius=0.05];
+            \draw[thin] (0.5,2) circle [radius=0.05];
+            \draw[thin] (1.5,2) circle [radius=0.05];
+            \draw[thin] (2.5,2) circle [radius=0.05];
+            
+            \draw[thin] (-1.5,3) circle [radius=0.05];
+            \draw[thin] (-0.5,3) circle [radius=0.05];
+            \draw[thin] (0.5,3) circle [radius=0.05];
+            \draw[thin] (1.5,3) circle [radius=0.05];
+            
+            \draw[thin] (0,4) circle [radius=0.05];
+            \node [above] at (0,4) {$\{a,b,c,d\}$};
+        \end{tikzpicture}
+        \caption{Caption}
+        \label{fig:ch01:sec06:prob5:1}
+    \end{figure}
+\end{enumerate}
 % problem 5 (end)
 
 % section 等价关系. 商映射 (end)
