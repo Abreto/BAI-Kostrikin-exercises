@@ -625,6 +625,29 @@ $\mathcal{P}(S)$ 的基数即为 $S$ 的不同子集的个数，
     但 $\bar{f}$ 不一定是单射.
     $\bar{f}$ 成为单射的条件是什么？
 \end{quotation}
+\begin{proof}
+对于任意 $x \in X$，
+\begin{equation}
+    \begin{aligned}
+        \bar{f} \cdot p(x) &= \bar{f}(\bar{x}) \\
+        &= f(x)
+    \end{aligned}
+\end{equation}
+    所以 $f = \bar{f} \cdot p$.
+    
+    另外，
+    \begin{equation}
+        \bar{f}(\bar{x}_1) = \bar{f}(\bar{x}_2)
+        \Leftrightarrow
+        f(x_1) = f(x_2).
+    \end{equation}
+    但这并不能推出 $x_1 \sim x_2 \Rightarrow \bar{x}_1 = \bar{x}_2$.
+    
+    $\bar{f}$ 成为单射的条件是
+    \begin{equation}
+        f(x) = f(x') \Rightarrow x \sim x'.
+    \end{equation}
+\end{proof}
 % problem 4 (end)
 
 \problem{5} % (begin)
